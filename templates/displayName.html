@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+          background-image: url('/static/bkg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: cover;
+        }
+    </style>    
+    <title> ChatCat </title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id ="box" class="container">
+    <div class="container">
+        <h2> Welcome to ChatCat! </h2>
+        <img class = "rounded" src ="/static/cat_icon.png" alt ="cat" height="100px" width="200px"> <br>
+        <div class="title">
+            <form action="/" method="POST">
+                <label> Enter a display name: </label> <br>
+                <input id ="input" class ="form-control" type="text" name="displayName" required><br>
+                <input class="btn btn-primary" type ="submit" name="Enter" value ="Submit"> <br>
+            </form>
+        </div>  
+    </div>
+</div>
+</body>
+</html>
