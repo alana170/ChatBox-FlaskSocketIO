@@ -14,9 +14,9 @@
   }
 
 #box{
-    background-color:lightpink; 
+    background-color:rgb(187, 163, 235); 
     width:40%; 
-    height:auto; 
+    height:50%; 
     margin-top: 100px;
     margin-left: 30%; 
     margin-right:30%; 
@@ -91,7 +91,8 @@ overflow: hidden;
     display:none;
     position:fixed;
     background-color:#313131;
-    overflow:auto
+    overflow:auto;
+    color: white;
     }
 
 div#popupContact {
@@ -101,3 +102,18 @@ div#popupContact {
     margin-left:-202px;
     font-family:'Raleway',sans-serif
     }
+
+.formbox {
+    background-color: darkblue; 
+    height:auto; 
+    margin-top: 100px;
+    margin-left: 30%; 
+    margin-right:30%; 
+    border-radius: 25px;
+    max-width:300px;
+    min-width:250px;
+    padding:10px 50px;
+    border:2px solid gray;
+    border-radius:10px;
+    font-family:raleway;
+}

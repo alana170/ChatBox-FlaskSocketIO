@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <head>
+    <style>
+        body {
+          background-image: url('/static/bkg2.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+    </style>    
     <script>
         function div_show() {
             document.getElementById('abc').style.display = "block";
@@ -23,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-light" style="background-color: pink;">
+    <nav class="navbar navbar-light" style="background-color: rgb(187, 163, 235);">
         <h3 id ="left" class= "navbar-text title"> Hello {{name}}! </h3>
         <h3 id ="left" class="navbar-text bigtitle"> ChatCat </h3>
         <img id = "cat" class = "rounded" src ="/static/cat_icon.png" alt ="cat" height="60px" width="100px"> 
@@ -40,15 +48,13 @@
         </svg> 
         Create a New Channel </button> 
 
-        <div id="abc">
+        <div id="abc" class = "formbox">
             <!-- Popup Div Starts Here -->
             <div id="popupContact">
-            <!-- Contact Us Form -->
             <form action="/" id="form" method="post" name="form">
-            <img id="close" src="" onclick ="div_hide()">
             <h2>Create a New Channel</h2>
             <hr>
-            <input id="name" name="name" placeholder="Channel Name" type="text" required>
+            <input class = "form-group" id="name" name="name" placeholder="Channel Name" type="text" required>
             <button class="btn btn-success" onclick= "check_empty()" id="submit">Create</button>
 
             </form>
@@ -64,10 +70,8 @@
 
       <div id ="textfield">
       <form class="form-inline" action ="/" method ="POST">
-        
         <input size = "125" class ="form-control" type="text" placeholder="Send a text.">
         <button type="submit" class="btn btn-success">Send</button>
-        
       </form>
     </div>
 </body>
